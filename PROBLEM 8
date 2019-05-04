@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+    int n;
+    int r = 10;
+    
+
+    cout << "Enter a number: ";
+    cin >> n;
+    cout << "Multiplication table of " << n;
+    cout << endl;
+    
+    for (int row = 1; row <= r; ++row) 
+    {
+        int prod = n * row;
+        cout << row << " X " << n << " = " << prod;
+        cout << endl;
+    }
+    return 0;
+    
+}
