@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+
+int main ()
+
+{
+	
+	int a,b,c,d;
+	double charge;
+	char choice;
+	c = 35;
+	
+	cout <<"Please enter how many gallons is used: " << endl;
+	cin >> a;
+	cout <<""<<endl;
+	cout <<"Is your payment out of due? [Y]es or [N]o" <<endl;
+	cin >> choice;
+
+	switch (choice)
+	{
+		case 'Y':
+		case 'y':
+			cout <<"How many months due: " <<endl;
+			cin >>b;
+			cout <<""<<endl;
+			cout <<"Please enter total amount of previous your bill/s: " <<endl;
+			cin >>d;
+			cout <<""<<endl;
+			cout <<" Your total water bill is: "<< endl;
+			cout <<( (c+(a*1.1)+(b*20)+d))<<endl;
+			break;
+		case 'N':
+		case 'n':
+			cout <<"Your total water bill is: " <<endl;
+	 		cout << (c+(a*1.1)) << endl;
+			break;
+		default:
+			cout<< "Please enter valid amount: " <<endl;
+			
+			
+	}
+	 
+	 return 0;
+	
+}
